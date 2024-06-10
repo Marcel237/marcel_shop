@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icons link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="shop.css">
+    <title>Marcel Shop</title>
+</head>
+<body>
+    <!-- Topbar start -->
+    <div class="container-fluid topbar">
+        <div class="row bg-secondary py-2 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center">
+                    <a href="" class="text-dark">FAQs</a>
+                    <span class="text-muted px-2">|</span>
+                    <a href="" class="text-dark">Help</a>
+                    <span class="text-muted px-2">|</span>
+                    <a href="" class="text-dark">Support</a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center">
+                    <a href="" class="text-dark px-2">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="" class="text-dark px-2">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="" class="text-dark px-2">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="" class="text-dark px-2">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="" class="text-dark px-2">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center py-3 px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a href class="text-decoration-none">
+                    <p class="m-0 h4 fw-bold">
+                        <span class="text-primary fw-bold border px-2 mr-1">MS</span>
+                        MARCEL's SHOP</p>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-6 text-start">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for products">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-transparent text-primary rounded-0">
+                                    <i class="bi bi-search"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-6 text-end">
+                    <a href class="btn border rounded-0">
+                        <i class="bi bi-heart text-primary"></i>
+                        <span class="badge text-dark">0</span>
+                    </a>
+                    <a href class="btn border rounded-0">
+                        <i class="bi bi-cart text-primary"></i>
+                        <span class="badge text-dark">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top End-->
+    
+    <!-- NavBar Start-->
+    <div class="container-fluid mb-5">
+        <div class="row border-top px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white rounded-0 w-100" data-bs-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 class="m-0">Categories</h6>
+                    <i class="bi bi-arrow-down text-dark"></i>
+                </a>
+                <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom" id="navbar-vertical">
+                    <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">Dresses <i class="bi bi-arrow-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a href="" class="dropdown-item">Men's Dresses</a>
+                                <a href="" class="dropdown-item">Women's Dresses</a>
+                                <a href="" class="dropdown-item">Baby's Dresses</a>
+                            </div>
+                        </div>
+                        <a href="" class="nav-item nav-link border">Shirts</a>
+                        <a href="" class="nav-item nav-link border">Jeans</a>
+                        <a href="" class="nav-item nav-link border">Swimwear</a>
+                        <a href="" class="nav-item nav-link border">Sleepwear</a>
+                        <a href="" class="nav-item nav-link border">Sportswear</a>
+                        <a href="" class="nav-item nav-link border">Jumpsuits</a>
+                        <a href="" class="nav-item nav-link border">Blazers</a>
+                        <a href="" class="nav-item nav-link border">Jackets</a>
+                        <a href="" class="nav-item nav-link border">Shoes</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-2 px-0">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">MS</span>Marcel's Shop</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav me-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="shop.html" class="nav-item nav-link">Shop</a>
+                            <a href="detail.html" class="nav-item nav-link">Shop Detail</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="cart.html" class="dropdown-item">Shopping Cart</a>
+                                    <a href="checkout.html" class="dropdown-item">Checkout</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <div class="navbar-nav ml-auto py-0">
+                            <a href="" class="nav-item nav-link">Login</a>
+                            <a href="" class="nav-item nav-link">Register</a>
+                        </div>
+                    </div>
+                </nav>
+                <div id="carouselExampleCaptions" class="carousel slide pt-2" style="height: 400px;" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="carousel-1.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <p>10% OFF YOUR FIRST ORDER</p>
+                                <h5 class="fw-bold py-3">Fashionable Dress</h5>
+                                <a href="#" class="btn text-dark bg-white fw-bold rounded-0">Shop Now</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="carousel-2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption text-center">
+                                <p>10% OFF YOUR FIRST ORDER</p>
+                                <h5 class="fw-bold py-3">Reasonable Price</h5>
+                                <a href="#" class="btn text-dark bg-white fw-bold rounded-0">Shop Now</a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Start -->
+    <div class="container-fluid pt-5">
+        <div class="row px-xl-5 pb-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="bi bi-check text-primary m-0 mr-3"></h1>
+                    <h5 class="font-weight-semi-bold m-0">Quality Product</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="bi bi-truck text-primary m-0 mr-2"></h1>
+                    <h5 class="font-weight-semi-bold m-0">Free Shipping</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="bi bi-watch text-primary m-0 mr-3"></h1>
+                    <h5 class="font-weight-semi-bold m-0">14-Day Return</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                    <h1 class="bi bi-phone text-primary m-0 mr-3"></h1>
+                    <h5 class="font-weight-semi-bold m-0">24/7 Support</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featured End -->
+    
+    <!-- Categories Start -->
+    <div class="container-fluid pt-5">
+        <div class="row px-xl-5 pb-3">
+            <div class="col-lg-4 col-md-6 pb-1">
+                <div class="cat-item d-flex flex-column border" style="padding: 30px;">
+                    <p class="text-end">15 Products</p>
+                    <a href class="cat-img position-relative overflow-hidden mb-3">
+                        <img src="cat-1.jpg" alt="" class="img-fluid">
+                    </a>
+                    <p class="h5">Men's Dresses</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pb-1">
+                <div class="cat-item d-flex flex-column border" style="padding: 30px;">
+                    <p class="text-end">15 Products</p>
+                    <a href class="cat-img position-relative overflow-hidden mb-3">
+                        <img src="cat-2.jpg" alt="" class="img-fluid">
+                    </a>
+                    <p class="h5">Men's Dresses</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pb-1">
+                <div class="cat-item d-flex flex-column border" style="padding: 30px;">
+                    <p class="text-end">15 Products</p>
+                    <a href class="cat-img position-relative overflow-hidden mb-3">
+                        <img src="cat-3.jpg" alt="" class="img-fluid">
+                    </a>
+                    <p class="h5">Men's Dresses</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pb-1">
+                <div class="cat-item d-flex flex-column border" style="padding: 30px;">
+                    <p class="text-end">15 Products</p>
+                    <a href class="cat-img position-relative overflow-hidden mb-3">
+                        <img src="cat-4.jpg" alt="" class="img-fluid">
+                    </a>
+                    <p class="h5">Men's Dresses</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pb-1">
+                <div class="cat-item d-flex flex-column border" style="padding: 30px;">
+                    <p class="text-end">15 Products</p>
+                    <a href class="cat-img position-relative overflow-hidden mb-3">
+                        <img src="cat-5.jpg" alt="" class="img-fluid">
+                    </a>
+                    <p class="h5">Men's Dresses</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pb-1">
+                <div class="cat-item d-flex flex-column border" style="padding: 30px;">
+                    <p class="text-end">15 Products</p>
+                    <a href class="cat-img position-relative overflow-hidden mb-3">
+                        <img src="cat-6.jpg" alt="" class="img-fluid">
+                    </a>
+                    <p class="h5">Men's Dresses</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Offers section-->
+<div class="container-fluid offer pt-5">
+    <div class="row px-xl-5 d-flex">
+        <div class="col-md-6 pb-4">
+            <div class="position-relative bg-secondary bg-opacity-10 text-center text-md-right text-white mb-2 py-5 px-5">
+                <img class="position-absolute w-50" src="offer-1.png" alt="Card image">
+                <div class="position-relative">
+                    <p class="fw-bold h5 text-danger opacity-50">20% OFF THE ALL ORDER</p>
+                    <p class="h1 py-3 text-dark">Spring Collection.</p>
+                    <a href="#" class="btn btn-outline-danger text-danger opacity-50 py-md-2 px-md-3">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 pb-4">
+            <div class="position-relative bg-secondary bg-opacity-10 text-center text-md-left text-white mb-2 py-5 px-5">
+                <img class="position-absolute w-50" src="offer-2.png" alt="Card image">
+                <div class="position-relative">
+                    <p class="fw-bold h5 text-danger opacity-50">20% OFF THE ALL ORDER</p>
+                    <p class="h1 py-3 text-dark">Spring Collection.</p>
+                    <a href="#" class="btn btn-outline-danger text-danger opacity-50 py-md-2 px-md-3">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- stay updated -->
+<div class="container-fluid bg-info bg-opacity-10">
+    <div class="row justify-content-md-center">
+        <div class="col-md-6 my-5">
+            <div class="text-center my-5">
+                <p class="h1"> Stay Updated</p>
+                <p class="py-3">Subscribe to our latest new's reports in order to purchase the best quality products before everyone else in the world</p>
+                <form action="#">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Email Goes Here">
+                        <div class="input-group-apend">
+                            <button class="btn bg-danger bg-opacity-25 rounded-0">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Products Start -->
+<div class="container-fluid pt-5">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card product-item border-0 mb-3">
+                <div class="card-header position-relative overflow-hidden bg-transparent border rounded-0">
+                    <img src="product-1.jpg" alt="" class="img-fluid w-100">
+                </div>
+                <div class="card-body text-center border rounded-0">
+                    <h6>Colorful Stylish Shirt</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>$123.00</h6> &nbsp;&nbsp;
+                        <h6 class="text-muted"><del>$125.00</del></h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-white border rounded-0">
+                    <a href="" class="btn btn-sm text-dark p-0">
+                        <i class="bi bi-eye text-danger"></i> View Detail
+                    </a> 
+                    <a href="" class="btn btn-sm text-dark p-0">
+                        <i class="bi bi-cart text-danger"></i> Add To Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card product-item border-0 mb-3">
+                <div class="card-header position-relative overflow-hidden bg-transparent border rounded-0">
+                    <img src="product-2.jpg" alt="" class="img-fluid w-100">
+                </div>
+                <div class="card-body text-center border rounded-0">
+                    <h6>Colorful Stylish Shirt</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>$123.00</h6> &nbsp;&nbsp;
+                        <h6 class="text-muted"><del>$125.00</del></h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-white border rounded-0">
+                    <a href="" class="btn btn-sm text-dark p-0">
+                        <i class="bi bi-eye text-danger"></i> View Detail
+                    </a> 
+                    <a href="" class="btn btn-sm text-dark p-0">
+                        <i class="bi bi-cart text-danger"></i> Add To Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card product-item border-0 mb-3">
+                <div class="card-header position-relative overflow-hidden bg-transparent border rounded-0">
+                    <img src="product-3.jpg" alt="" class="img-fluid w-100">
+                </div>
+                <div class="card-body text-center border rounded-0">
+                    <h6>Colorful Stylish Shirt</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>$123.00</h6> &nbsp;&nbsp;
+                        <h6 class="text-muted"><del>$125.00</del></h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-white border rounded-0">
+                    <a href="" class="btn btn-sm text-dark p-0">
+                        <i class="bi bi-eye text-danger"></i> View Detail
+                    </a> 
+                    <a href="" class="btn btn-sm text-dark p-0">
+                        <i class="bi bi-cart text-danger"></i> Add To Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card product-item border-0 mb-3">
+                <div class="card-header position-relative overflow-hidden bg-transparent border rounded-0">
+                    <img src="product-4.jpg" alt="" class="img-fluid w-100">
+                </div>
+                <div class="card-body text-center border rounded-0">
+                    <h6>Colorful Stylish Shirt</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>$123.00</h6> &nbsp;&nbsp;
+                        <h6 class="text-muted"><del>$125.00</del></h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-white border rounded-0">
+                    <a href="" class="btn btn-sm text-dark p-0">
+                        <i class="bi bi-eye text-danger"></i> View Detail
+                    </a> 
+                    <a href="" class="btn btn-sm text-dark p-0">
+                        <i class="bi bi-cart text-danger"></i> Add To Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card product-item border-0 mb-3">
+                <div class="card-header position-relative overflow-hidden bg-transparent border rounded-0">
+                    <img src="product-5.jpg" alt="" class="img-fluid w-100">
+                </div>
+                <div class="card-body text-center border rounded-0">
+                    <h6>Colorful Stylish Shirt</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>$123.00</h6> &nbsp;&nbsp;
+                        <h6 class="text-muted"><del>$125.00</del></h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-white border rounded-0">
+                    <a href="" class="btn btn-sm text-dark p-0">
+                        <i class="bi bi-eye text-danger"></i> View Detail
+                    </a> 
+                    <a href="" class="btn btn-sm text-dark p-0">
+                        <i class="bi bi-cart text-danger"></i> Add To Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card product-item border-0 mb-3">
+                <div class="card-header position-relative overflow-hidden bg-transparent border rounded-0">
+                    <img src="product-6.jpg" alt="" class="img-fluid w-100">
+                </div>
+                <div class="card-body text-center border rounded-0">
+                    <h6>Colorful Stylish Shirt</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>$123.00</h6> &nbsp;&nbsp;
+                        <h6 class="text-muted"><del>$125.00</del></h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-white border rounded-0">
+                    <a href="" class="btn btn-sm text-dark p-0">
+                        <i class="bi bi-eye text-danger"></i> View Detail
+                    </a> 
+                    <a href="" class="btn btn-sm text-dark p-0">
+                        <i class="bi bi-cart text-danger"></i> Add To Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card product-item border-0 mb-3">
+                <div class="card-header position-relative overflow-hidden bg-transparent border rounded-0">
+                    <img src="product-7.jpg" alt="" class="img-fluid w-100">
+                </div>
+                <div class="card-body text-center border rounded-0">
+                    <h6>Colorful Stylish Shirt</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>$123.00</h6> &nbsp;&nbsp;
+                        <h6 class="text-muted"><del>$125.00</del></h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-white border rounded-0">
+                    <a href="" class="btn btn-sm text-dark p-0">
+                        <i class="bi bi-eye text-danger"></i> View Detail
+                    </a> 
+                    <a href="" class="btn btn-sm text-dark p-0">
+                        <i class="bi bi-cart text-danger"></i> Add To Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card product-item border-0 mb-3">
+                <div class="card-header position-relative overflow-hidden bg-transparent border rounded-0">
+                    <img src="product-8.jpg" alt="" class="img-fluid w-100">
+                </div>
+                <div class="card-body text-center border rounded-0">
+                    <h6>Colorful Stylish Shirt</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>$123.00</h6> &nbsp;&nbsp;
+                        <h6 class="text-muted"><del>$125.00</del></h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-white border rounded-0">
+                    <a href="" class="btn btn-sm text-dark p-0">
+                        <i class="bi bi-eye text-danger"></i> View Detail
+                    </a> 
+                    <a href="" class="btn btn-sm text-dark p-0">
+                        <i class="bi bi-cart text-danger"></i> Add To Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Products End -->
+
+<!-- Vendor start -->
+<div class="container-fluid py-5">
+    <div class="row px-xl-5 d-flex">
+        <div class="col">
+            
+        </div>
+    </div>
+</div>
+<!-- Vendor End -->
+
+<!-- Footer Start -->
+<div class="container-fluid bg-secondary bg-opacity-25 text-dark mt-5 pt-5">
+    <div class="row px-xl-5 pt-5">
+        <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+            <a href class="text-decoration-none">
+                <p class="mb-4 h2 fw-bold">
+                    <span class="text-primary fw-bold border border-white px-3 mr-1">MS</span> Marcel's Shop
+                </p>
+            </a>
+            <p>Welcome to the best fashion boutique where you meet the best quality products and moderate and promotional prices.. Always at your disposal</p>
+            <p class="mb-2">
+                <i class="bi bi-map text-danger"></i> Mc40th, Diego Silang, Taguig, Ph
+            </p>
+            <p class="mb-2">
+                <i class="bi bi-envelope text-danger"></i> marceltech03@gmail.com
+            </p>
+            <p class="mb-0">
+                <i class="bi bi-phone text-danger"></i> +63 920 421 3061
+            </p>
+        </div>
+        <div class="col-lg-8 col-md-12">
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h5 class="fw-bold text-dark mb-4">Quick Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a href="" class="text-dark text-decoration-none mb-2">
+                            <i class="bi bi-arrow-right"> </i>Home
+                        </a>
+                        <a href="" class="text-dark text-decoration-none mb-2">
+                            <i class="bi bi-arrow-right"></i>Our Shop
+                        </a>
+                        <a href="" class="text-dark text-decoration-none mb-2">
+                            <i class="bi bi-arrow-right"> </i>Shop Detail
+                        </a>
+                        <a href="" class="text-dark text-decoration-none mb-2">
+                            <i class="bi bi-arrow-right"> </i>Shopping Cart
+                        </a>
+                        <a href="" class="text-dark text-decoration-none mb-2">
+                            <i class="bi bi-arrow-right"> </i>Checkout
+                        </a>
+                        <a href="" class="text-dark text-decoration-none">
+                            <i class="bi bi-arrow-right"> </i>Contact Us
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h5 class="fw-bold text-dark mb-4">Quick Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a href="" class="text-dark text-decoration-none mb-2">
+                            <i class="bi bi-arrow-right"> </i>Home
+                        </a>
+                        <a href="" class="text-dark text-decoration-none mb-2">
+                            <i class="bi bi-arrow-right"></i>Our Shop
+                        </a>
+                        <a href="" class="text-dark text-decoration-none mb-2">
+                            <i class="bi bi-arrow-right"> </i>Shop Detail
+                        </a>
+                        <a href="" class="text-dark text-decoration-none mb-2">
+                            <i class="bi bi-arrow-right"> </i>Shopping Cart
+                        </a>
+                        <a href="" class="text-dark text-decoration-none mb-2">
+                            <i class="bi bi-arrow-right"> </i>Checkout
+                        </a>
+                        <a href="" class="text-dark text-decoration-none">
+                            <i class="bi bi-arrow-right"> </i>Contact Us
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h5 class="fw-bold text-dark mb-2">Newsletter</h5>
+                    <form action="">
+                        <div class="form-group mb-2">
+                            <input type="text" class="form-control rounded-0 py-3" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="email" class="form-control rounded-0 py-3" placeholder="Your Email" required>
+                        </div>
+                        <div>
+                            <button class="btn btn-danger text-dark border-0 rounded-0 py-3 cursor-pointer w-100">Subscribe Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row border-top border-light mx-xl-5 py-4">
+        <div class="col-md-6 px-xl-0">
+            <p class="mb-md-0 text-center text-md-left text-dark">
+                &copy; <a href="#" class="text-decoration-none  fw-bold">Marcel Shop.</a> All Rights Reserved. Designed by
+                <a href="#" class="text-decoration-none  fw-bold">Marcel Tech</a>
+                <br>
+                Distributed By
+                <a href="#" class="text-decoration-none text-danger opacity-50">Marcel Tech FrontEnd Designs</a>
+            </p>
+        </div>
+        <div class="col-md-6 px-xl-0 text-center text-md-right">
+            <img src="payments.png" alt="" class="img-fluid" style="max-width: 100%; height: auto;">
+        </div>
+    </div>
+</div>
+<!-- footer End-->
+
+<!-- Back To Top -->
+<a href="#" class="btn btn-primary back-to-top">
+    <i class="bi bi-arrow-up"></i>
+</a>
+</body>
+</html>

@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar stling */
+
+
+.carousel-item {
+  height: 410px;
+  position: relative;
+}
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-caption {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+.carousel-caption h5 {
+  text-wrap: nowrap;
+  font-size: 2.5em;
+}
+.carousel-caption p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-wrap: nowrap;
+}
+
+.cat-item img {
+  transition: transform 0.3s;
+}
+
+.cat-item:hover img {
+  transform: scale(1.2);
+}
+
+.offer .text-md-right img  {
+  max-width: 50%;
+  max-height: 90%;
+  left: 0;
+  bottom: 0;
+}
+.offer .text-md-left img  {
+  max-width: 50%;
+  max-height: 90%;
+  right: 0;
+  bottom: 0;
+}
+
+.product-item img {
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.product-item:hover img {
+  transform: scale(1.2);
+}
+
+/* vendor styles */
+
+
+/* back to top*/
+.back-to-top {
+  display: inline;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
+}
+
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}
